@@ -211,7 +211,7 @@
 
   
 
-  <!-- <div id="sb-banner" style="visibility: hidden;"> 
+  <div id="sb-banner" style="visibility: hidden;"> 
     
 
 
@@ -1259,14 +1259,15 @@ $(function () {
     $(document).ready(function() {
       if (window.b12) {
         if (window.b12.popup) {
-          window.b12.popup.init()
+          window.b12.popup.init();  // Initializes popup, retain if you want the popup to work
         }
-        if (window.b12.banner) {
-          window.b12.banner.init()
-        }
+        // if (window.b12.banner) {
+        //   window.b12.banner.init();  // This line is commented out to stop the banner
+        // }
       }
     })
-  </script>
+</script>
+
   
 
   
